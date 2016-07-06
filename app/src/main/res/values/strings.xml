@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">USBDebuggingTool</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_rs232">USB TO RS232</string>
+    <string name="action_ch340">USB TO CH340</string>
+    <string name="action_ch341">USB TO CH341</string>
+
+    <string-array name="baud_rate">
+        <item>300</item>
+        <item>600</item>
+        <item>1200</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>230400</item>
+        <item>460800</item>
+        <item>921600</item>
+    </string-array>
+    <string-array name="stop_bits">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="data_bits">
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="parity">
+        <item>none</item>
+        <item>odd</item>
+        <item>even</item>
+        <item>mark</item>
+        <item>space</item>
+    </string-array>
+    <string-array name="flow_control">
+        <item>none</item>
+        <item>CTS/RTS</item>
+        <item>DTR/DSR</item>
+        <item>XOFF/XON</item>
+    </string-array>
+    <string-array name="port_list_1">
+        <item>1</item>
+    </string-array>
+</resources>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/id_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/view_margin"
+        android:background="@color/title_bg">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/openButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/view_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:text="Open"
+                android:textSize="@dimen/textSize_m" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/portnum"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center|bottom"
+                android:text="Port"
+                android:textSize="@dimen/textSize_s"></TextView>
+
+            <Spinner
+                android:id="@+id/portValue"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/view_margin"
+                android:layout_weight="1"
+                android:background="@color/body_bg"
+                android:gravity="center"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/configButton"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/view_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:scaleType="centerInside"
+                android:text="Config"
+                android:textSize="@dimen/textSize_m" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/baudRate"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center|bottom"
+                android:text="Baud rate"
+                android:textSize="@dimen/textSize_s" />
+
+            <Spinner
+                android:id="@+id/baudRateValue"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/view_margin"
+                android:layout_weight="1"
+                android:background="@color/body_bg"
+                android:gravity="center"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/stopBit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center|bottom"
+                android:text="Stop(bit)"
+                android:textSize="@dimen/textSize_s"></TextView>
+
+            <Spinner
+                android:id="@+id/stopBitValue"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/view_margin"
+                android:layout_weight="1"
+                android:background="@color/body_bg"
+                android:gravity="center"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dataBit"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center|bottom"
+                android:text="Data(bit)"
+                android:textSize="@dimen/textSize_s"></TextView>
+
+            <Spinner
+                android:id="@+id/dataBitValue"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/view_margin"
+                android:layout_weight="1"
+                android:background="@color/body_bg"
+                android:gravity="center"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/parity"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center|bottom"
+                android:text="Parity"
+                android:textSize="@dimen/textSize_s"></TextView>
+
+            <Spinner
+                android:id="@+id/parityValue"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/view_margin"
+                android:layout_weight="1"
+                android:background="@color/body_bg"
+                android:gravity="center"
+                android:inputType="none" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/flowControl"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="2"
+                android:gravity="center|bottom"
+                android:text="Flow"
+                android:textSize="@dimen/textSize_s"></TextView>
+
+            <Spinner
+                android:id="@+id/flowControlValue"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="@dimen/view_margin"
+                android:layout_weight="1"
+                android:background="@color/body_bg"
+                android:gravity="center"
+                android:inputType="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/id_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_header"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/view_marginBottom"
+            android:layout_marginLeft="@dimen/view_marginLeft"
+            android:layout_weight="1"
+            android:background="@color/body_bg"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/baseOrderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/OrderList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/view_marginBottom"
+            android:layout_marginLeft="@dimen/view_marginLeft"
+            android:layout_marginRight="@dimen/view_marginRight"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/write_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/view_marginTop"
+                android:background="@color/body_bg">
+
+                <Button
+                    android:id="@+id/WriteButton"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/view_margin"
+                    android:gravity="center"
+                    android:scaleType="centerInside"
+                    android:text="Write"
+                    android:textSize="@dimen/textSize_m" />
+
+                <EditText
+                    android:id="@+id/WriteValues"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@id/WriteButton"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textSize="@dimen/textSize_l"></EditText>
+            </RelativeLayout>
+
+            <com.hadisi.usbhosttool.myview.CustomEdiText
+                android:id="@+id/ReadValues"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/write_ll"
+                android:background="@color/body_bg"
+                android:focusableInTouchMode="false"
+                android:padding="@dimen/view_padding"
+                android:scrollbars="vertical"
+                android:text=""
+                android:textSize="@dimen/textSize_l" />
+
+            <CheckBox
+                android:id="@+id/vlaues_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/write_ll"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/view_padding"
+                android:text="按16进制" />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
